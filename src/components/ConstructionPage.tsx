@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import LanguageToggle from "./LanguageToggle";
-import CountdownTimer from "./CountdownTimer";
 import ContactInfo from "./ContactInfo";
 
 export default function ConstructionPage() {
@@ -68,27 +67,11 @@ export default function ConstructionPage() {
             <Image
               src="/logo.png"
               alt="Global Services International C.A Logo"
-              width={140}
-              height={140}
+              width={520}
+              height={210}
               className="hero-logo"
               priority
             />
-          </div>
-
-          {/* Animated gear / construction icon */}
-          <div className="construction-icon" aria-hidden="true">
-            <svg viewBox="0 0 100 100" className="gear-svg">
-              <g className="gear-rotate">
-                <path
-                  fill="currentColor"
-                  d="M43.7,16.3l-2.1,7.9c-1.8,0.5-3.5,1.2-5.1,2.2l-7.6-3.4l-8.5,8.5l3.4,7.6
-                  c-1,1.6-1.7,3.3-2.2,5.1l-7.9,2.1v12l7.9,2.1c0.5,1.8,1.2,3.5,2.2,5.1l-3.4,7.6l8.5,8.5l7.6-3.4
-                  c1.6,1,3.3,1.7,5.1,2.2l2.1,7.9h12l2.1-7.9c1.8-0.5,3.5-1.2,5.1-2.2l7.6,3.4l8.5-8.5l-3.4-7.6
-                  c1-1.6,1.7-3.3,2.2-5.1l7.9-2.1v-12l-7.9-2.1c-0.5-1.8-1.2-3.5-2.2-5.1l3.4-7.6l-8.5-8.5l-7.6,3.4
-                  c-1.6-1-3.3-1.7-5.1-2.2l-2.1-7.9H43.7z M49.7,35.7c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S42,35.7,49.7,35.7z"
-                />
-              </g>
-            </svg>
           </div>
 
           {/* Badge */}
@@ -116,13 +99,7 @@ export default function ConstructionPage() {
           <div className="divider" aria-hidden="true" />
         </section>
 
-        {/* Countdown section */}
-        <section className="section" aria-label="Countdown timer">
-          <CountdownTimer />
-        </section>
 
-        {/* Divider */}
-        <div className="divider" aria-hidden="true" />
 
         {/* Contact section */}
         <section className="section" aria-labelledby="contact-heading">
