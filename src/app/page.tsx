@@ -229,18 +229,15 @@ export default function HomePage() {
             </div>
             <div className="divisions-grid" role="list">
               {DIVISIONS.map((div, i) => (
-                <article key={i} className={`division-card division-card--${div.variant}`} role="listitem">
+                <Link
+                  key={i}
+                  href="/servicios"
+                  className={`division-card division-card--${div.variant}`}
+                  id={`division-btn-${i}`}
+                  aria-label={divTexts[i].title}
+                >
                   <div className="division-card-bg" aria-hidden="true" style={{ backgroundImage: `url(${div.bg})` }} />
-                  <div className="division-card-overlay" aria-hidden="true" />
-                  <div className="division-card-content">
-                    <div className="division-icon-wrap" aria-hidden="true">{div.icon}</div>
-                    <h3 className="division-title">{divTexts[i].title}</h3>
-                    <p className="division-desc">{divTexts[i].desc}</p>
-                    <Link href="/servicios" className="division-btn" id={`division-btn-${i}`}>
-                      {t.divisions.btn} <ArrowRight size={14} />
-                    </Link>
-                  </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
