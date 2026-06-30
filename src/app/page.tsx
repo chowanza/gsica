@@ -109,10 +109,10 @@ const PARTICLES = [
 ];
 
 const DIVISIONS = [
-  { icon: <Wrench   className="w-6 h-6 text-white" />, variant: "maint", bg: "/Services-1.png" },
-  { icon: <Droplets className="w-6 h-6 text-white" />, variant: "sanea", bg: "/Services-2.png" },
-  { icon: <HardHat  className="w-6 h-6 text-white" />, variant: "obras", bg: "/Services-3.png" },
-  { icon: <Truck    className="w-6 h-6 text-white" />, variant: "logis", bg: "/Services.png"   },
+  { icon: <Wrench   className="w-6 h-6 text-white" />, variant: "maint", bg: "/mantenimiento.png" },
+  { icon: <Droplets className="w-6 h-6 text-white" />, variant: "sanea", bg: "/saneamiento.png" },
+  { icon: <HardHat  className="w-6 h-6 text-white" />, variant: "obras", bg: "/metalmecanica.png" },
+  { icon: <Truck    className="w-6 h-6 text-white" />, variant: "logis", bg: "/logistica.png"   },
 ];
 
 const DIVISIONS_ES = [
