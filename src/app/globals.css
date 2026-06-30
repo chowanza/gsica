@@ -1112,12 +1112,20 @@ a {
 
 .svc-div-custom-badge {
   position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   z-index: 2;
+}
+
+.svc-div-custom-badge--left {
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.svc-div-custom-badge--right {
+  bottom: 1.5rem;
+  right: 1.5rem;
 }
 
 .svc-div-custom-icon-wrap {
@@ -1138,6 +1146,28 @@ a {
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+.svc-div-number {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 8.5rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  line-height: 1;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.svc-div-number--left {
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.svc-div-number--right {
+  top: 1rem;
+  right: 1.5rem;
 }
 
 .svc-div-content {

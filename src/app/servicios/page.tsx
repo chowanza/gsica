@@ -204,7 +204,14 @@ export default function ServiciosPage() {
               aria-hidden="true"
             >
               <div className="svc-div-img-overlay" />
-              <div className="svc-div-custom-badge">
+              
+              {/* Large background number */}
+              <span className={`svc-div-number ${i % 2 === 0 ? "svc-div-number--left" : "svc-div-number--right"}`}>
+                {div.number}
+              </span>
+              
+              {/* Custom badge */}
+              <div className={`svc-div-custom-badge ${i % 2 === 0 ? "svc-div-custom-badge--left" : "svc-div-custom-badge--right"}`}>
                 <div className="svc-div-custom-icon-wrap">
                   <DivIcon name={div.icon} />
                 </div>
