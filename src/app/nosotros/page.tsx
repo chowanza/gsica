@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Target, Eye, Heart } from "lucide-react";
+import { ArrowRight, CheckCircle2, Target, Eye, Heart, Users, TrendingUp, Leaf, Award, Shield } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLang } from "@/context/LanguageContext";
@@ -26,7 +26,13 @@ const content = {
       {
         id: "valores", label: "Valores", icon: "heart",
         text: "",
-        values: ["Integridad","Compromiso","Excelencia Operativa","Seguridad","Responsabilidad Social","Innovación","Trabajo en Equipo","Respeto"],
+        values: [
+          { title: "Respeto", desc: "Valorar a nuestros trabajadores como personas, parte integral de nuestra organización.", icon: "users" },
+          { title: "Responsabilidad Social", desc: "Integración socio-económica comunitaria que impulse el desarrollo nacional.", icon: "trending-up" },
+          { title: "Ambiente", desc: "Compromiso ambiental aplicando las mejores prácticas en cada operación.", icon: "leaf" },
+          { title: "Calidad de Servicio", desc: "Servicio basado en la mejora continua y la excelencia operativa.", icon: "award" },
+          { title: "Seguridad, Salud y Ambiente", desc: "Mantener la integridad física de trabajadores e instalaciones en todo momento.", icon: "shield" }
+        ],
       },
     ],
     quality: {
@@ -64,7 +70,13 @@ const content = {
       {
         id: "valores", label: "Values", icon: "heart",
         text: "",
-        values: ["Integrity","Commitment","Operational Excellence","Safety","Social Responsibility","Innovation","Teamwork","Respect"],
+        values: [
+          { title: "Respect", desc: "Valuing our workers as individuals, an integral part of our organization.", icon: "users" },
+          { title: "Social Responsibility", desc: "Community socio-economic integration that drives national development.", icon: "trending-up" },
+          { title: "Environment", desc: "Environmental commitment applying best practices in every operation.", icon: "leaf" },
+          { title: "Quality of Service", desc: "Service based on continuous improvement and operational excellence.", icon: "award" },
+          { title: "Safety, Health & Environment", desc: "Maintaining the physical integrity of workers and facilities at all times.", icon: "shield" }
+        ],
       },
     ],
     quality: {
@@ -92,6 +104,16 @@ function TabIcon({ name }: { name: string }) {
   if (name === "eye")    return <Eye    className={cls} />;
   if (name === "heart")  return <Heart  className={cls} />;
   return <Target className={cls} />;
+}
+
+function ValueIcon({ name }: { name: string }) {
+  const cls = "w-6 h-6 text-blue-500";
+  if (name === "users")       return <Users className={cls} />;
+  if (name === "trending-up") return <TrendingUp className={cls} />;
+  if (name === "leaf")        return <Leaf className={cls} />;
+  if (name === "award")       return <Award className={cls} />;
+  if (name === "shield")      return <Shield className={cls} />;
+  return <CheckCircle2 className={cls} />;
 }
 
 export default function NosotrosPage() {
@@ -151,10 +173,13 @@ export default function NosotrosPage() {
               ) : (
                 <div className="nos-values-grid" role="list">
                   {(tab as typeof t.tabs[2]).values?.map((v, i) => (
-                    <div key={i} className="nos-value-chip" role="listitem">
-                      <CheckCircle2 size={18} className="nos-value-icon" aria-hidden="true" />
-                      {v}
-                    </div>
+                    <article key={i} className="nos-value-card" role="listitem">
+                      <div className="nos-value-card-header">
+                        <ValueIcon name={v.icon} />
+                        <h3 className="nos-value-card-title">{v.title}</h3>
+                      </div>
+                      <p className="nos-value-card-desc">{v.desc}</p>
+                    </article>
                   ))}
                 </div>
               )}

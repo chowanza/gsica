@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Wrench, Droplets, HardHat, Truck, CheckCircle2 } from "lucide-react";
+import { 
+  ArrowRight, Wrench, Droplets, HardHat, Truck, CheckCircle2,
+  Shield, Award, Layers, Activity, BookOpen, Package, Zap, Search
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLang } from "@/context/LanguageContext";
@@ -134,12 +137,25 @@ const content = {
 } as const;
 
 function DivIcon({ name }: { name: string }) {
-  const cls = "w-8 h-8";
+  const cls = "w-5 h-5 text-white";
   if (name === "wrench")   return <Wrench   className={cls} />;
   if (name === "droplets") return <Droplets className={cls} />;
   if (name === "hardhat")  return <HardHat  className={cls} />;
   if (name === "truck")    return <Truck    className={cls} />;
   return <Wrench className={cls} />;
+}
+
+function AddIcon({ index }: { index: number }) {
+  const cls = "w-6 h-6 text-blue-500";
+  if (index === 0) return <Shield className={cls} />;
+  if (index === 1) return <Award className={cls} />;
+  if (index === 2) return <Layers className={cls} />;
+  if (index === 3) return <Activity className={cls} />;
+  if (index === 4) return <BookOpen className={cls} />;
+  if (index === 5) return <Package className={cls} />;
+  if (index === 6) return <Zap className={cls} />;
+  if (index === 7) return <Search className={cls} />;
+  return <Shield className={cls} />;
 }
 
 export default function ServiciosPage() {
@@ -188,8 +204,12 @@ export default function ServiciosPage() {
               aria-hidden="true"
             >
               <div className="svc-div-img-overlay" />
-              <span className="svc-div-number" aria-hidden="true">{div.number}</span>
-              <span className="svc-div-badge">{div.tag}</span>
+              <div className="svc-div-custom-badge">
+                <div className="svc-div-custom-icon-wrap">
+                  <DivIcon name={div.icon} />
+                </div>
+                <span className="svc-div-custom-label">{div.tag}</span>
+              </div>
             </div>
 
             {/* Content panel */}
@@ -224,6 +244,9 @@ export default function ServiciosPage() {
             <div className="svc-additional-grid" role="list">
               {t.additional.items.map((item, i) => (
                 <article key={i} className="svc-add-card" role="listitem">
+                  <div className="svc-add-card-icon-wrap">
+                    <AddIcon index={i} />
+                  </div>
                   <h3 className="svc-add-card-title">{item.title}</h3>
                   <p className="svc-add-card-desc">{item.desc}</p>
                 </article>
