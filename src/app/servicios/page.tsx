@@ -148,7 +148,7 @@ export default function ServiciosPage() {
 
   return (
     <>
-      <Navbar />
+      <Navbar theme="blue" />
       <main id="main" style={{ paddingTop: "72px" }} className="svc-page-wrapper">
 
         {/* ── HERO SERVICIOS ── */}

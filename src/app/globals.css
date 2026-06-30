@@ -124,6 +124,29 @@ a {
   border-bottom: 1px solid #e5e7eb;
 }
 
+.navbar--blue {
+  background: var(--color-primary-900);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+.navbar--blue .navbar-link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.navbar--blue .navbar-link:hover,
+.navbar--blue .navbar-link.active {
+  color: var(--color-accent-300);
+}
+
+.navbar--blue .lang-toggle {
+  color: #ffffff;
+}
+
+.navbar--blue .mobile-menu-btn {
+  color: #ffffff;
+}
+
 .navbar-inner {
   display: flex;
   align-items: center;
@@ -1298,6 +1321,7 @@ a {
 
 .nos-hero-inner {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 3.5rem 1.5rem;
 }
@@ -1523,6 +1547,7 @@ a {
 
 .ctc-hero-inner {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 3.5rem 1.5rem;
 }

@@ -12,7 +12,7 @@ const labels = {
   en: { inicio: "Home",   servicios: "Services",  nosotros: "About Us", contacto: "Contact",  cta: "Request Quote" },
 };
 
-export default function Navbar() {
+export default function Navbar({ theme = "white" }: { theme?: "white" | "blue" }) {
   const { lang, setLang } = useLang();
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
@@ -28,13 +28,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="navbar" role="navigation" aria-label="Navegación principal">
+    <nav className={`navbar${theme === "blue" ? " navbar--blue" : ""}`} role="navigation" aria-label="Navegación principal">
       <div className="container-wide">
         <div className="navbar-inner">
           {/* ── Logo (blue version for white navbar) ── */}
           <Link href="/" className="navbar-logo" aria-label="GSICA – Inicio">
             <Image
-              src="/logo.png"
+              src={theme === "blue" ? "/logo 2.png" : "/logo.png"}
               alt="Global Services International C.A"
               width={150}
               height={60}
