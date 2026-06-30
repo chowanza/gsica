@@ -2,6 +2,7 @@
 
 import { ArrowRight, ChevronDown, Wrench, Droplets, HardHat, Truck, Shield, Award, Users, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLang } from "@/context/LanguageContext";
@@ -235,8 +236,17 @@ export default function HomePage() {
                   className={`division-card division-card--${div.variant}`}
                   id={`division-btn-${i}`}
                   aria-label={divTexts[i].title}
+                  style={{ display: "block", overflow: "visible" }}
                 >
-                  <div className="division-card-bg" aria-hidden="true" style={{ backgroundImage: `url(${div.bg})` }} />
+                  <Image
+                    src={div.bg}
+                    alt={divTexts[i].title}
+                    width={580}
+                    height={440}
+                    style={{ width: "100%", height: "auto", display: "block" }}
+                    priority={i < 2}
+                    unoptimized
+                  />
                 </Link>
               ))}
             </div>

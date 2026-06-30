@@ -564,30 +564,25 @@ a {
 /* Division Card */
 .division-card {
   position: relative;
-  border-radius: var(--radius-xl);
-  overflow: hidden;
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  background: transparent;
   cursor: pointer;
+  overflow: visible;
   transition: transform var(--transition-med);
+  display: block;
 }
 
 .division-card:hover {
   transform: translateY(-4px);
 }
 
-.division-card-bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
+.division-card img {
+  border-radius: var(--radius-xl);
   transition: transform var(--transition-med);
+  display: block;
 }
 
-.division-card:hover .division-card-bg {
-  transform: scale(1.04);
+.division-card:hover img {
+  transform: scale(1.02);
 }
 
 .division-card-overlay {
