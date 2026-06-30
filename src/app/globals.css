@@ -1077,7 +1077,14 @@ a {
 .svc-div-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(10,22,40,0.55) 0%, rgba(10,22,40,0.2) 100%);
+}
+
+.svc-div-section--img-right .svc-div-img-overlay {
+  background: linear-gradient(to right, #0a1628 0%, rgba(10, 22, 40, 0) 70%);
+}
+
+.svc-div-section--img-left .svc-div-img-overlay {
+  background: linear-gradient(to left, #0a1628 0%, rgba(10, 22, 40, 0) 70%);
 }
 
 .svc-div-number {
