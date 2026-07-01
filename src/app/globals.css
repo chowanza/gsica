@@ -1518,6 +1518,10 @@ a {
   padding: 5rem 0 0;
 }
 
+.nos-quality--valores {
+  padding-bottom: 4rem;
+}
+
 .nos-quality-title {
   font-family: var(--font-body);
   font-size: clamp(1.5rem, 3vw, 2rem);

@@ -189,7 +189,7 @@ export default function NosotrosPage() {
         </section>
 
         {/* ── QUALITY COMMITMENT ── */}
-        <section className="nos-quality" aria-labelledby="nos-quality-heading">
+        <section className={`nos-quality${activeTab === 2 ? " nos-quality--valores" : ""}`} aria-labelledby="nos-quality-heading">
           <div className="container-wide">
             <h2 id="nos-quality-heading" className="nos-quality-title">{t.quality.title}</h2>
             <p className="nos-quality-subtitle">{t.quality.subtitle}</p>
