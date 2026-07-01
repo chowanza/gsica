@@ -12,12 +12,13 @@ const content = {
     contactTitle: "Contacto",
     navTitle: "Navegación",
     address: "Calle Quinta entre tercera y cuarta, local Galpón S/N, sector Ali Primera, Anaco. Edo. Anzoátegui. CP 6003.",
+    address2: "Estado Anzoátegui, Venezuela. Área de operaciones en el corredor petrolero del oriente venezolano.",
     phone: "+58 412-1794335",
     email: "globalservicesinternational@gsica.com.ve",
     navLinks: [
       { href: "/",          label: "Inicio" },
       { href: "/servicios", label: "Servicios" },
-      { href: "/nosotros",  label: "Nosotros" },
+      { href: "/nosotros",  label: "Nosotros & Calidad" },
       { href: "/contacto",  label: "Contacto" },
     ],
     copy: "© 2026 Global Services International, C.A. Todos los derechos reservados.",
@@ -28,12 +29,13 @@ const content = {
     contactTitle: "Contact",
     navTitle: "Navigation",
     address: "Calle Quinta entre tercera y cuarta, local Galpón S/N, sector Ali Primera, Anaco. Edo. Anzoátegui. CP 6003.",
+    address2: "Anzoátegui State, Venezuela. Area of operations in the oil corridor of eastern Venezuela.",
     phone: "+58 412-1794335",
     email: "globalservicesinternational@gsica.com.ve",
     navLinks: [
       { href: "/",          label: "Home" },
       { href: "/servicios", label: "Services" },
-      { href: "/nosotros",  label: "About Us" },
+      { href: "/nosotros",  label: "About Us & Quality" },
       { href: "/contacto",  label: "Contact" },
     ],
     copy: "© 2026 Global Services International, C.A. All rights reserved.",
@@ -75,6 +77,10 @@ export default function Footer() {
               <li className="footer-contact-item">
                 <MapPin size={16} className="footer-contact-icon" aria-hidden="true" />
                 <span>{t.address}</span>
+              </li>
+              <li className="footer-contact-item">
+                <MapPin size={16} className="footer-contact-icon" aria-hidden="true" />
+                <span>{t.address2}</span>
               </li>
               <li className="footer-contact-item">
                 <Phone size={16} className="footer-contact-icon" aria-hidden="true" />
