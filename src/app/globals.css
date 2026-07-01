@@ -1502,7 +1502,7 @@ a {
 /* Quality section */
 .nos-quality {
   background: var(--color-navy-footer);
-  padding: 5rem 0 6rem;
+  padding: 5rem 0 0;
 }
 
 .nos-quality-title {
@@ -1934,7 +1934,7 @@ a {
 
 .nos-video-section {
   background: var(--color-primary-900);
-  padding: 4rem 0 0;
+  padding: 0;
   width: 100%;
   overflow: hidden;
 }
