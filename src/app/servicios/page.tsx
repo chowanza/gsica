@@ -27,7 +27,7 @@ const content = {
         accent: "Maximizamos la vida útil de sus activos críticos.",
         desc: "Servicios especializados de mantenimiento preventivo, predictivo y correctivo para equipos rotativos, estáticos y sistemas de tubería en la industria petrolera, gasífera y petroquímica.",
         items: ["Servicios Petroleros","Mantenimiento de Equipos","Reparación de Tuberías a Pozos","Mantenimiento de Turbocompresores y Válvulas","Servicios de Válvulas y Bombas","Servicios Eléctricos y Mecánicos"],
-        icon: "wrench", bg: "/Services-1.png",
+        icon: "wrench", bg: "/Services-1.png?v=2",
       },
       {
         number: "02", tag: "División 02",
@@ -35,7 +35,7 @@ const content = {
         accent: "Protegemos el ambiente con soluciones técnicas de vanguardia.",
         desc: "Gestionamos el saneamiento industrial y el manejo ambiental en campos petroleros y áreas industriales con equipos de última generación y personal certificado.",
         items: ["Servicio de Saneamiento","Servicios de Vacuum y Super Vector","Deforestación y Reparación de Vías"],
-        icon: "droplets", bg: "/Services-2.png",
+        icon: "droplets", bg: "/Services-2.png?v=2",
       },
       {
         number: "03", tag: "División 03",
@@ -89,7 +89,7 @@ const content = {
         accent: "We maximize the lifespan of your critical assets.",
         desc: "Specialized preventive, predictive and corrective maintenance services for rotating, static equipment and piping systems in the oil, gas and petrochemical industry.",
         items: ["Oil Services","Equipment Maintenance","Pipeline Repair to Wells","Turbocompressor & Valve Maintenance","Valve & Pump Services","Electrical & Mechanical Services"],
-        icon: "wrench", bg: "/Services-1.png",
+        icon: "wrench", bg: "/Services-1.png?v=2",
       },
       {
         number: "02", tag: "Division 02",
@@ -97,7 +97,7 @@ const content = {
         accent: "We protect the environment with cutting-edge technical solutions.",
         desc: "We manage industrial sanitation and environmental handling in oil fields and industrial areas with state-of-the-art equipment and certified personnel.",
         items: ["Sanitation Services","Vacuum & Super Vector Services","Deforestation & Road Repair"],
-        icon: "droplets", bg: "/Services-2.png",
+        icon: "droplets", bg: "/Services-2.png?v=2",
       },
       {
         number: "03", tag: "Division 03",
