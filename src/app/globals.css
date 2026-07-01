@@ -1594,6 +1594,14 @@ a {
   line-height: 1.65;
 }
 
+.nos-quality-img-wrap {
+  margin-top: 3rem;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 768px) {
   .nos-quality-grid {
     grid-template-columns: 1fr;

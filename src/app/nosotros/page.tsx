@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle2, Target, Eye, Heart, Users, TrendingUp, Leaf, Award, Shield } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -228,6 +229,18 @@ export default function NosotrosPage() {
                 </ul>
                 <blockquote className="nos-quality-quote">{t.quality.objectives.quote}</blockquote>
               </article>
+            </div>
+
+            {/* Truck image under the cards */}
+            <div className="nos-quality-img-wrap">
+              <Image
+                src="/abajo-calidad-compromiso.png"
+                alt={t.quality.title}
+                width={1280}
+                height={600}
+                style={{ width: "100%", height: "auto", display: "block" }}
+                unoptimized
+              />
             </div>
           </div>
         </section>
