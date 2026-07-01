@@ -43,7 +43,7 @@ const content = {
         accent: "Construimos la infraestructura que sostiene la industria.",
         desc: "Ejecutamos proyectos de ingeniería civil e instalaciones metalmecánicas con estándares de clase mundial, desde plataformas industriales hasta obras de alta complejidad para el sector energético.",
         items: ["Servicios de Soldadura","Servicio de Sandblasting","Obras Civiles y de Superficie","Servicios de Levantamiento Topográfico"],
-        icon: "hardhat", bg: "/Services-3.png",
+        icon: "hardhat", bg: "/servicios3.png",
       },
       {
         number: "04", tag: "División 04",
@@ -51,7 +51,7 @@ const content = {
         accent: "Conectamos sus operaciones con precisión y seguridad.",
         desc: "Soluciones integrales de transporte, logística y operaciones especiales para la industria petrolera y energética, con equipos certificados y operadores de alta especialización.",
         items: ["Transporte Pesado y Liviano","Servicios de Brazo Hidráulico","Movimiento de Tierra","Servicios de Pozos","Servicios / Suministro de Wireline","Servicios Coiltubing","Grúas, Volquetas y Ambulancia"],
-        icon: "truck", bg: "/Services.png",
+        icon: "truck", bg: "/servicios4.png",
       },
     ],
     additional: {
@@ -105,7 +105,7 @@ const content = {
         accent: "We build the infrastructure that sustains the industry.",
         desc: "We execute civil engineering projects and metal-mechanical installations with world-class standards, from industrial platforms to complex works for the energy sector.",
         items: ["Welding Services","Sandblasting Services","Civil & Surface Works","Topographic Survey Services"],
-        icon: "hardhat", bg: "/Services-3.png",
+        icon: "hardhat", bg: "/servicios3.png",
       },
       {
         number: "04", tag: "Division 04",
@@ -113,7 +113,7 @@ const content = {
         accent: "We connect your operations with precision and safety.",
         desc: "Comprehensive transport, logistics and special operations solutions for the oil and energy industry, with certified equipment and highly specialized operators.",
         items: ["Heavy & Light Transport","Hydraulic Arm Services","Earthmoving","Well Services","Wireline Services / Supply","Coiltubing Services","Cranes, Dump Trucks & Ambulances"],
-        icon: "truck", bg: "/Services.png",
+        icon: "truck", bg: "/servicios4.png",
       },
     ],
     additional: {
