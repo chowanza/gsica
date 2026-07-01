@@ -1081,6 +1081,10 @@ a {
   background: var(--color-primary-900);
 }
 
+.svc-div-section:last-of-type {
+  border-bottom: none;
+}
+
 .svc-div-section--img-right {
   direction: rtl;
 }
@@ -1914,7 +1918,7 @@ a {
 .svc-additional-video-wrap {
   width: 100%;
   max-width: 100%;
-  margin: 4rem 0 0;
+  margin: 0;
   padding: 0;
   overflow: hidden;
 }
@@ -1942,4 +1946,19 @@ a {
   border-radius: 0;
   border: none;
   box-shadow: none;
+}
+
+/* Hide iOS Safari play button overlay and controls on cosmetic loop videos */
+video {
+  pointer-events: none;
+}
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls-play-button {
+  display: none !important;
 }
