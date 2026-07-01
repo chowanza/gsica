@@ -230,18 +230,18 @@ export default function NosotrosPage() {
                 <blockquote className="nos-quality-quote">{t.quality.objectives.quote}</blockquote>
               </article>
             </div>
+          </div>
 
-            {/* Truck image under the cards */}
-            <div className="nos-quality-img-wrap">
-              <Image
-                src="/abajo-calidad-compromiso.png"
-                alt={t.quality.title}
-                width={1280}
-                height={600}
-                style={{ width: "100%", height: "auto", display: "block" }}
-                unoptimized
-              />
-            </div>
+          {/* Truck image under the cards */}
+          <div className="nos-quality-img-wrap">
+            <Image
+              src="/abajo-calidad-compromiso.png"
+              alt={t.quality.title}
+              width={1920}
+              height={800}
+              style={{ width: "100%", height: "auto", display: "block" }}
+              unoptimized
+            />
           </div>
         </section>
 
