@@ -12,7 +12,7 @@ const content = {
     contactTitle: "Contacto",
     navTitle: "Navegación",
     address: "Calle Quinta entre tercera y cuarta, local Galpón S/N, sector Ali Primera, Anaco. Edo. Anzoátegui. CP 6003.",
-    address2: "Estado Anzoátegui, Venezuela. Área de operaciones en el corredor petrolero del oriente venezolano.",
+    address2: "ESTADO ANZOATEGUI MCPIO. SAN JOSE DE GUANIPA PARR. SAN JOSE DE GUANIPA 6054 ZONA INDUSTRIAL CALLE ALEJANDRO PETION AV MARIÑO C/C CA JACINTO LARA SERCOGRAM, C.A 2",
     phone: "+58 412-1794335",
     email: "globalservicesinternational@gsica.com.ve",
     navLinks: [
@@ -29,7 +29,7 @@ const content = {
     contactTitle: "Contact",
     navTitle: "Navigation",
     address: "Calle Quinta entre tercera y cuarta, local Galpón S/N, sector Ali Primera, Anaco. Edo. Anzoátegui. CP 6003.",
-    address2: "Anzoátegui State, Venezuela. Area of operations in the oil corridor of eastern Venezuela.",
+    address2: "ESTADO ANZOATEGUI MCPIO. SAN JOSE DE GUANIPA PARR. SAN JOSE DE GUANIPA 6054 ZONA INDUSTRIAL CALLE ALEJANDRO PETION AV MARIÑO C/C CA JACINTO LARA SERCOGRAM, C.A 2",
     phone: "+58 412-1794335",
     email: "globalservicesinternational@gsica.com.ve",
     navLinks: [
