@@ -247,13 +247,9 @@ export default function NosotrosPage() {
 
         {/* Video 3 Banner */}
         <section className="nos-video-section">
-          <div className="container-wide">
-            <div className="nos-video-wrap">
-              <video autoPlay loop muted playsInline className="nos-video">
-                <source src="/Video3.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
+          <video autoPlay loop muted playsInline className="nos-video">
+            <source src="/Video3.mp4" type="video/mp4" />
+          </video>
         </section>
 
         {/* ── CTA BANNER ── */}

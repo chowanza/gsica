@@ -1893,9 +1893,10 @@ a {
 
 /* Looping HTML5 Cosmetic Videos styling */
 .svc-hero-video-wrap {
-  max-width: 1280px;
-  margin: 3rem auto 0;
-  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 4rem 0 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -1903,15 +1904,16 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
 .svc-additional-video-wrap {
-  max-width: 1280px;
-  margin: 4rem auto 0;
-  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 4rem 0 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -1919,25 +1921,23 @@ a {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius-xl);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
 
 .nos-video-section {
   background: var(--color-primary-900);
   padding: 4rem 0 0;
-}
-
-.nos-video-wrap {
-  border-radius: var(--radius-xl);
+  width: 100%;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .nos-video {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
 }
