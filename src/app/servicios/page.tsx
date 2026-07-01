@@ -211,7 +211,7 @@ export default function ServiciosPage() {
           >
             {/* Image panel */}
             <div
-              className="svc-div-img"
+              className={`svc-div-img svc-div-img--div${div.number}`}
               style={{ backgroundImage: `url(${div.bg})` }}
               aria-hidden="true"
             >

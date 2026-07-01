@@ -1095,10 +1095,23 @@ a {
 
 .svc-div-img {
   position: relative;
-  background-size: cover;
-  background-position: center;
   min-height: 420px;
   overflow: hidden;
+}
+
+.svc-div-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.svc-div-img--div01::before,
+.svc-div-img--div02::before {
+  transform: scale(1.12); /* 12% zoom to crop transparent borders */
 }
 
 .svc-div-img-overlay {
