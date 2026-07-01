@@ -21,7 +21,7 @@ const content = {
       { href: "/nosotros",  label: "Nosotros & Calidad" },
       { href: "/contacto",  label: "Contacto" },
     ],
-    copy: "© 2026 Global Services International, C.A. Todos los derechos reservados.",
+    copy: "© 2026 AMPER TECH Todos los derechos reservados.",
   },
   en: {
     desc: "Comprehensive engineering, specialized maintenance and logistics solutions for the energy and heavy industry.",
@@ -38,7 +38,7 @@ const content = {
       { href: "/nosotros",  label: "About Us & Quality" },
       { href: "/contacto",  label: "Contact" },
     ],
-    copy: "© 2026 Global Services International, C.A. All rights reserved.",
+    copy: "© 2026 AMPER TECH All rights reserved.",
   },
 };
 

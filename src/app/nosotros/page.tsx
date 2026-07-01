@@ -232,30 +232,46 @@ export default function NosotrosPage() {
             </div>
           </div>
 
-          {/* Truck image under the cards */}
-          <div className="nos-quality-img-wrap">
+          {/* Truck or Vision image under the cards */}
+          {activeTab !== 2 && (
+            <div className="nos-quality-img-wrap">
+              <Image
+                src={activeTab === 1 ? "/vision-1.png" : "/abajo-calidad-compromiso.png"}
+                alt={activeTab === 1 ? "Visión" : t.quality.title}
+                width={1920}
+                height={800}
+                style={{ width: "100%", height: "auto", display: "block" }}
+                unoptimized
+              />
+            </div>
+          )}
+        </section>
+
+        {/* Video or Image Banner depending on activeTab */}
+        {activeTab === 1 ? (
+          <div className="nos-video-section">
             <Image
-              src="/abajo-calidad-compromiso.png"
-              alt={t.quality.title}
+              src="/vision-2.png"
+              alt="Visión"
               width={1920}
               height={800}
               style={{ width: "100%", height: "auto", display: "block" }}
               unoptimized
             />
           </div>
-        </section>
-
-        {/* Video 3 Banner */}
-        <section
-          className="nos-video-section"
-          dangerouslySetInnerHTML={{
-            __html: `
-              <video autoplay loop muted playsinline class="nos-video">
-                <source src="/Video3.mp4" type="video/mp4" />
-              </video>
-            `
-          }}
-        />
+        ) : (
+          <section
+            key={activeTab}
+            className="nos-video-section"
+            dangerouslySetInnerHTML={{
+              __html: `
+                <video autoplay loop muted playsinline class="nos-video">
+                  <source src="${activeTab === 2 ? '/Video4.mp4' : '/Video3.mp4'}" type="video/mp4" />
+                </video>
+              `
+            }}
+          />
+        )}
 
         {/* ── CTA BANNER ── */}
         <section className="cta-banner" aria-labelledby="nos-cta-heading">
