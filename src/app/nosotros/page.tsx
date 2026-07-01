@@ -246,11 +246,16 @@ export default function NosotrosPage() {
         </section>
 
         {/* Video 3 Banner */}
-        <section className="nos-video-section">
-          <video autoPlay loop muted playsInline className="nos-video">
-            <source src="/Video3.mp4" type="video/mp4" />
-          </video>
-        </section>
+        <section
+          className="nos-video-section"
+          dangerouslySetInnerHTML={{
+            __html: `
+              <video autoplay loop muted playsinline class="nos-video">
+                <source src="/Video3.mp4" type="video/mp4" />
+              </video>
+            `
+          }}
+        />
 
         {/* ── CTA BANNER ── */}
         <section className="cta-banner" aria-labelledby="nos-cta-heading">
