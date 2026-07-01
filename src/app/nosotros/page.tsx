@@ -245,6 +245,17 @@ export default function NosotrosPage() {
           </div>
         </section>
 
+        {/* Video 3 Banner */}
+        <section className="nos-video-section">
+          <div className="container-wide">
+            <div className="nos-video-wrap">
+              <video autoPlay loop muted playsInline className="nos-video">
+                <source src="/Video3.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA BANNER ── */}
         <section className="cta-banner" aria-labelledby="nos-cta-heading">
           <div className="cta-banner-diagonal" aria-hidden="true" />
@@ -257,17 +268,6 @@ export default function NosotrosPage() {
               <Link href="/contacto" className="btn-cta-banner" id="nos-cta-btn">
                 {t.cta.btn} <ArrowRight size={16} />
               </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Video 3 Banner */}
-        <section className="nos-video-section">
-          <div className="container-wide">
-            <div className="nos-video-wrap">
-              <video autoPlay loop muted playsInline className="nos-video">
-                <source src="/Video3.mp4" type="video/mp4" />
-              </video>
             </div>
           </div>
         </section>
