@@ -189,6 +189,13 @@ export default function ServiciosPage() {
           </div>
         </section>
 
+        {/* Video 1 Banner */}
+        <div className="svc-hero-video-wrap">
+          <video autoPlay loop muted playsInline className="svc-hero-video">
+            <source src="/Video1.mp4" type="video/mp4" />
+          </video>
+        </div>
+
         {/* ── DIVISIONS ── */}
         {t.divisions.map((div, i) => (
           <section
@@ -239,6 +246,13 @@ export default function ServiciosPage() {
             </div>
           </section>
         ))}
+
+        {/* Video 2 Banner */}
+        <div className="svc-additional-video-wrap">
+          <video autoPlay loop muted playsInline className="svc-additional-video">
+            <source src="/Video2.mp4" type="video/mp4" />
+          </video>
+        </div>
 
         {/* ── ADDITIONAL SERVICES ── */}
         <section className="svc-additional" aria-labelledby="svc-add-heading">

@@ -260,6 +260,17 @@ export default function NosotrosPage() {
             </div>
           </div>
         </section>
+
+        {/* Video 3 Banner */}
+        <section className="nos-video-section">
+          <div className="container-wide">
+            <div className="nos-video-wrap">
+              <video autoPlay loop muted playsInline className="nos-video">
+                <source src="/Video3.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
